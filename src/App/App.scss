@@ -1,38 +1,37 @@
 .App {
+  height: 100vh;
+  background-color: #AF928F;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.appContents {
+  height: 100%;
+  background-color: #AF928F;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  text-align: center;
 }
 
-.App-link {
-  color: #61dafb;
+.SharkTank {
+  background-color: #6C81A4;
+  width:50%;
+  text-align: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+div.singleStudent.card{
+  margin: 5px;
+  padding: 20px;
+  border-radius: 50% 50% 0 0;
+  background-color: #AF928F;
+}
+
+ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.graveyard {
+  width: 50%;
+  background-color: #7897A7;
+  text-align: center;
 }

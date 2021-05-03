@@ -1,4 +1,4 @@
-const Students = [
+const students = [
   {
     id: 1,
     firstName: 'Ben',
@@ -151,24 +151,23 @@ const Students = [
   }
 ];
 
-function LivingStudents(Student) {
-  Students.map(Student.isDead === false);
-}
+const getLiveStudents = () => students.filter((student) => !student.isDead);
+const getDeadStudents = () => students.filter((student) => student.isDead);
 
-function DearlyBeloved(Student) {
-  Students.map(Student.isDead === true);
-}
+const killStudent = () => {
+  const currentLiveStudents = getLiveStudents();
+  const randomStudent = currentLiveStudents[Math.floor(Math.random() * currentLiveStudents.length)];
 
-function FollowTheLight() {
-  const StudentIndex = Math.floor(Math.random() * Students.length);
-  if (Students[StudentIndex].isDead === false) {
-    Students[StudentIndex].isDead = true;
-  }
-}
+  const index = students.indexOf(randomStudent);
+
+  students[index].isDead = true;
+
+  return [getLiveStudents(), getDeadStudents()];
+};
 
 export {
-  Students,
-  LivingStudents,
-  DearlyBeloved,
-  FollowTheLight
+  getLiveStudents,
+  getDeadStudents,
+  killStudent,
+  students
 };
