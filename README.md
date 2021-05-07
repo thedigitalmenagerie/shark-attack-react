@@ -29,3 +29,5 @@ List of contributors and links to GH profiles:
 https://github.com/thedigitalmenagerie
 
 Link to Loom video walkthrough of application:
+
+https://www.loom.com/share/c77770fba3a14c00889d3fc45a24b72d
